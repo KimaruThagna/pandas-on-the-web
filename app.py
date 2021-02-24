@@ -8,3 +8,7 @@ st.markdown('''
 # **The Streamlit X Pandas Crossover**
  **EDA Web App** 
 ''')
+
+# Upload CSV data
+with st.sidebar.header('1. Upload your CSV file'):
+    uploaded_file = st.sidebar.file_uploader("Upload CSV file", type=["csv"])
