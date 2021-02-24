@@ -26,3 +26,6 @@ if uploaded_file is not None:
     st.write('---')
     st.header('**Pandas Profiling Results**')
     st_profile_report(report)
+
+else:
+    st.info('Upload CSV file to get started.')
