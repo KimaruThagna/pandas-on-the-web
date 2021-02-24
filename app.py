@@ -23,7 +23,6 @@ if uploaded_file is not None:
     report = ProfileReport(df, explorative=True)
     st.header('** DataFrame**')
     st.write(df)
-    st.write('---')
     st.header('**Pandas Profiling Results**')
     st_profile_report(report)
 
