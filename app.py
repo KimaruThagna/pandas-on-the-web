@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 import streamlit as st
 from pandas_profiling import ProfileReport
@@ -10,8 +9,8 @@ st.markdown('''
 ''')
 
 # Upload CSV data
-with st.sidebar.header('1. Upload your CSV file'):
-    uploaded_file = st.sidebar.file_uploader("Upload CSV file", type=["csv"])
+st.sidebar.header('Upload your CSV file')
+uploaded_file = st.sidebar.file_uploader("Upload CSV file", type=["csv"])
 
 # Pandas Profiling Report
 if uploaded_file is not None:
